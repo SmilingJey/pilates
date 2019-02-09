@@ -1,0 +1,135 @@
+.intro {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  min-height: 785px;
+  background-image: url("../img/screen1-back-d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  &__left {
+    margin-top: 170px;
+  }
+
+  &__header {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 72px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: $color-green;
+  }
+
+  &__text {
+    margin-top: 11px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: -0.25px;
+    background-color: $color-green;
+  }
+
+  &__button {
+    position: relative;
+    z-index: 1;
+    padding: 17px 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 4px);
+      right: -40px;
+      display: block;
+      width: 72px;
+      height: 12px;
+      background-image: url("../img/button-arrow.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__picture {
+    position: relative;
+    top: 35px;
+    left: 40px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .intro {
+    min-height: 660px;
+    background-image: url("../img/screen1-back-t.jpg");
+
+    &__left {
+      margin-top: 150px;
+      flex-shrink: 0;
+    }
+
+    &__header {
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    &__text {
+      margin-top: 37px;
+      margin-left: 2px;
+    }
+
+    &__picture {
+      position: absolute;
+      top: 50px;
+      left: auto;
+      right: -35px;
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .intro {
+    min-height: 459px;
+    background-image: url("../img/screen1-back-m.jpg");
+
+    &__left {
+      margin-top: 115px;
+    }
+
+    &__header {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__picture {
+      top: 140px;
+      right: -60px;
+    }
+
+    &__button {
+      font-size: 11px;
+      padding: 12px 15px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.reviews {
+  padding-bottom: 50px;
+
+  &__data {
+    position: relative;
+    padding: 112px 168px 85px 143px;
+    display: flex;
+
+    &::after {
+      content: "";
+      display: block;
+      opacity: 0.5;
+      width: 110px;
+      height: 145px;
+      position: absolute;
+      background-image: url("../img/review-back.svg");
+      background-repeat: no-repeat;
+      right: 60px;
+      top: 70px;
+    }
+  }
+
+  &__name {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    b {
+      font-weight: inherit;
+    }
+  }
+
+  &__age {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    span {
+      margin-right: 14px;
+    }
+  }
+
+  &__vk,
+  &__inst {
+    margin-right: 16px;
+    height: 17px;
+    fill: #7f7f7f;
+    position: relative;
+    top: 2px;
+  }
+
+  &__photo {
+    max-width: none;
+    margin-top: 10px;
+    margin-right: 55px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .reviews {
+    &__data {
+      position: relative;
+      padding: 33px 36px 20px;
+      align-items: center;
+
+      &::after {
+        right: -30px;
+        top: 20px;
+        background-size: 50%;
+      }
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__age {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    &__comment {
+      font-size: 16px;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+
+
+    &__photo {
+      margin-top: 0;
+      margin-right: 28px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .reviews {
+    &__data {
+      position: relative;
+      padding: 40px 15px 40px;
+      flex-direction: column;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__photo {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &__name {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__age {
+      text-align: center;
+    }
+
+    &__comment {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+    }
+  }
+}

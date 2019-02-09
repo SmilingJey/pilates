@@ -1,0 +1,247 @@
+.trainings {
+  &__desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    width: 400px;
+
+    h3 {
+      font-family: "Roboto", "Arial", sans-serif;
+      font-size: 28px;
+      font-weight: 400;
+    }
+  }
+
+  &__desc--1 {
+    margin-top: -105px;
+  }
+
+  &__desc--1 &__text {
+    margin-left: 95px;
+    margin-top: 110px;
+  }
+
+  &__desc--1 &__img {
+    margin-right: 165px;
+  }
+
+  &__desc--2 {
+    flex-direction: row-reverse;
+    margin-top: -30px;
+  }
+
+  &__desc--2 &__text {
+    margin-right: 70px;
+    margin-top: 85px;
+  }
+
+  &__desc--2 &__img {
+    margin-left: 110px;
+  }
+
+  &__desc--3 {
+    margin-top: 120px;
+  }
+
+  &__desc--3 &__text {
+    margin-left: 95px;
+    margin-top: -75px;
+  }
+
+  &__desc--3 &__img {
+    margin-right: 165px;
+  }
+
+  &__desc--4 {
+    flex-direction: row-reverse;
+    margin-top: 150px;
+    margin-bottom: 70px;
+  }
+
+  &__desc--4 &__text {
+    margin-right: 35px;
+    margin-top: -90px;
+  }
+
+  &__desc--4 &__img {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .trainings {
+    &__text {
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
+
+    &__desc--1 {
+      margin-top: -55px;
+    }
+
+    &__desc--1 &__text {
+      margin-left: 55px;
+      margin-top: 30px;
+      width: 370px;
+    }
+
+    &__desc--1 &__img {
+      margin-right: 80px;
+    }
+
+    &__desc--2 {
+      flex-direction: row-reverse;
+      margin-top: -30px;
+    }
+
+    &__desc--2 &__text {
+      margin-right: 0;
+      margin-top: 60px;
+      width: 300px;
+    }
+
+    &__desc--2 &__img {
+      margin-left: 50px;
+    }
+
+    &__desc--3 {
+      margin-top: 110px;
+    }
+
+    &__desc--3 &__text {
+      margin-left: 30px;
+      margin-top: -60px;
+      width: 260px;
+    }
+
+    &__desc--3 &__img {
+      margin-right: 60px;
+    }
+
+    &__desc--4 {
+      position: relative;
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+      margin-top: 80px;
+      margin-bottom: 55px;
+    }
+
+    &__desc--4 &__text {
+      position: absolute;
+      top: 5px;
+      right: 0;
+      margin-right: 0;
+      margin-top: 0;
+      width: 300px;
+    }
+
+    &__desc--4 &__img {
+      margin-left: -30px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .trainings {
+    &__desc {
+      position: relative;
+      display: block;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    &__text {
+      width: 100%;
+
+      h3 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 285px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &__desc--1 {
+      margin-top: 0;
+    }
+
+    &__desc--1 &__text {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &__desc--1 &__img {
+      margin-right: 0;
+    }
+
+    &__desc--2 {
+      margin-top: 0;
+    }
+
+    &__desc--2 &__text {
+      margin-right: 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &__desc--2 &__img {
+      margin-left: 0;
+      top: -50px;
+    }
+
+    &__desc--3 {
+      margin-top: 0;
+    }
+
+    &__desc--3 &__text {
+      margin-left: 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &__desc--3 &__img {
+      margin-right: 0;
+      top: 40px;
+    }
+
+    &__desc--4 {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+
+    &__desc--4 &__text {
+      position: static;
+      margin-right: 0;
+      margin-top: 0;
+      width: 100%;
+    }
+
+    &__desc--4 &__img {
+      margin-left: 0;
+      top: 50px;
+    }
+  }
+}

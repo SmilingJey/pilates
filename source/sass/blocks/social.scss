@@ -1,0 +1,23 @@
+.social {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  margin-left: 0;
+  padding: 0;
+
+  &__item {
+    margin-left: 21px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      fill: #ffffff;
+    }
+
+    a:hover {
+      fill: rgba(#ffffff, 0.5);
+    }
+  }
+}

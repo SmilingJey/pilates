@@ -1,0 +1,76 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 0;
+
+  @include center-max;
+
+  &__logo {
+    z-index: 1;
+    display: block;
+    width: 63px;
+    height: 53px;
+    margin-top: 31px;
+    background-color: $color-green;
+    background-image: url("../img/logo-d.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  &__menu-toogle {
+    margin-top: 49px;
+    margin-left: 25px;
+  }
+
+  &__tel {
+    z-index: 1;
+    margin-top: 46px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .header {
+    &__logo {
+      width: 51px;
+      height: 42px;
+      margin-top: 24px;
+      background-image: url("../img/logo-t.png");
+    }
+
+    &__menu-toogle {
+      margin-top: 33px;
+      margin-left: 75px;
+    }
+
+    &__tel {
+      margin-top: 33px;
+    }
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .header {
+    &__logo {
+      width: 38px;
+      height: 32px;
+      margin-top: 14px;
+      background-image: url("../img/logo-d.png");
+    }
+
+    &__menu-toogle {
+      margin-top: 23px;
+      margin-left: 20px;
+    }
+
+    &__tel {
+      display: none;
+    }
+  }
+}

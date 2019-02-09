@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="134.969" viewBox="0 0 103 134.969">
+<defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3 {
+        fill: #a9b68d;
+      }
+
+      .cls-2, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #a9b68d;
+        stroke-width: 6px;
+        opacity: 0.7;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#91aa59"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <g id="Группа_8" data-name="Группа 8">
+        <path id="_222" data-name="222" class="cls-2" d="M25.573,109.29A12.9,12.9,0,1,1,38.755,96.72,12.923,12.923,0,0,1,25.573,109.29Z" transform="translate(-13 -14)"/>
+        <circle id="_333" data-name="333" class="cls-3" cx="12.734" cy="43.672" r="5.953"/>
+      </g>
+      <g>
+        <circle id="_22" data-name="22" class="cls-3" cx="52.516" cy="82.391" r="12.891"/>
+        <circle id="_33" data-name="33" class="cls-3" cx="53.391" cy="43.703" r="12.891"/>
+        <path id="_44" data-name="44" class="cls-2" d="M67.147,24.97a4.961,4.961,0,1,1,5.07-4.835A4.971,4.971,0,0,1,67.147,24.97Z" transform="translate(-13 -14)"/>
+        <path id="_11" data-name="11" class="cls-4" d="M64.337,145.98A12.9,12.9,0,1,1,77.52,133.41,12.923,12.923,0,0,1,64.337,145.98Z" transform="translate(-13 -14)"/>
+      </g>
+      <g>
+        <circle id="_2" data-name="2" class="cls-3" cx="90.125" cy="82.328" r="12.875"/>
+        <path id="_3" data-name="3" class="cls-4" d="M103.837,66.577a8.929,8.929,0,1,1,9.127-8.7A8.946,8.946,0,0,1,103.837,66.577Z" transform="translate(-13 -14)"/>
+        <circle id="_4" data-name="4" class="cls-3" cx="90.953" cy="5.953" r="5.953"/>
+        <path id="_1" data-name="1" class="cls-2" d="M102.087,141.961a8.93,8.93,0,1,1,9.126-8.7A8.948,8.948,0,0,1,102.087,141.961Z" transform="translate(-13 -14)"/>
+      </g>
+    </g>
+  </g>
+</svg>
