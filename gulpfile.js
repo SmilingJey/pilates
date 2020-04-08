@@ -117,7 +117,7 @@ gulp.task('imgmin', function () {
       imagemin.optipng({
         optimizationLevel: 3
       }),
-      imagemin.jpegtran({
+      imagemin.mozjpeg({
         progressive: true
       })
     ]))

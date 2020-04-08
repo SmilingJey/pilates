@@ -18,7 +18,7 @@
     "gulp-csso": "^3.0.1",
     "gulp-exclude-gitignore": "^1.2.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
@@ -30,18 +30,19 @@
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^2.0.2",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-webp": "^3.0.0",
+    "gulp-webp": "^4.0.1",
     "gulp-zip": "^4.2.0",
     "moment": "^2.23.0",
     "posthtml-include": "^1.2.0",
-    "stylelint": "9.6.x"
+    "stylelint": "^13.3.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -59,7 +60,9 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {},
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "babel": {
     "presets": [
       [
